@@ -1,36 +1,36 @@
-import { useReducer, useState, ReactNode, useEffect } from "react";
+import {  useState, ReactNode } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
-type State = {
-  count: number;
-};
-const initialState: State = { count: 0 };
+// type State = {
+//   count: number;
+// };
+// const initialState: State = { count: 0 };
 
-type ACTIONTYPE =
-  | { type: "increment"; payload: number }
-  | { type: "decrement"; payload: number };
-type IUser = {
-  name: string;
-};
+// type ACTIONTYPE =
+//   | { type: "increment"; payload: number }
+//   | { type: "decrement"; payload: number };
+// type IUser = {
+//   name: string;
+// };
 
 
-function reducer(state: State, action: ACTIONTYPE): State {
-  switch (action.type) {
-    case "increment":
-      return {count: state.count + action.payload};
-    case "decrement":
-      return {count: state.count - action.payload};
-    default:
-      throw new Error();
-  }
-}
+// function reducer(state: State, action: ACTIONTYPE): State {
+//   switch (action.type) {
+//     case "increment":
+//       return {count: state.count + action.payload};
+//     case "decrement":
+//       return {count: state.count - action.payload};
+//     default:
+//       throw new Error();
+//   }
+// }
 
 
 function App(): ReactNode {
   const [count, setCount] = useState(0);
-  const [people, setPeople] = useState<IUser>(null!);
-  const [state, dispatch] = useReducer(reducer, initialState);
+//   const [people, setPeople] = useState<IUser>(null!);
+//   const [state, dispatch] = useReducer(reducer, initialState);
   return (
     <>
       <div>

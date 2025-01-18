@@ -1,5 +1,5 @@
 
-import React, { ReactDOM, ReactNode, FC } from "react";
+import React, { ReactNode, FC } from "react";
 
 type GreatProps = {
     number: number
